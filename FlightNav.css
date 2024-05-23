@@ -1,0 +1,138 @@
+body {
+  background-image: url("image1.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flight-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.search-flights-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: calc(25vh - 100px);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 500px;
+}
+
+.information-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px; /* Increased width */
+}
+
+.title {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ffffff00;
+  padding: 1rem;
+  text-align: center;
+}
+
+.flight-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.flight-search label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.flight-search select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.selected-flight-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.flight-rank {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.flight-rank h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.flight-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px 20px;
+  width: 100%;
+}
+
+.flight-info-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flight-info-item p:first-child {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.no-fly-zone {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.no-fly-zone-red {
+  background-color: #f00;
+}
+
+.no-fly-zone-green {
+  background-color: #0f0;
+}
